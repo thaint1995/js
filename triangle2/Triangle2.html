@@ -2,25 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Triangle1</title>
-<script type="text/javascript">
-	function ve(){
-		paint="";
-		x=document.getElementById("value").value;
-		for(i=1;i<=x;i++){
-			for(j=i;j>=1;j--){
-				paint+=j%10+" ";
-			}
-			paint+="<br/>";
-		}
-		document.getElementById("triangle").innerHTML=paint;
-	}
-</script>
+<title>Triangle2</title>
 </head>
 
 <body>
 <input type="text" id="value" />
 <input type="button" value="vẽ tam giác" onclick="ve();" />
-<div id="triangle"></div>
+<div style="text-align:center" id="triangle"></div>
+<script src="javascript.js"></script>
 </body>
 </html>
